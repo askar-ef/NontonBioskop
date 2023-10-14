@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MenuActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/activity_toolbar"/>
+
+    <TextView
+        android:id="@+id/txt_movies"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movies"
+        android:textSize="24sp"
+        android:textStyle="bold"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+<!--    film 1-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/film_1"
+        app:layout_constraintTop_toBottomOf="@+id/txt_movies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guide"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:src="@drawable/film_1"/>
+
+            <TextView
+                android:id="@+id/txt_film_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="4dp"
+                android:text="Elemental"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/rating_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:drawableLeft="@drawable/twotone_star_24"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--    film 2-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/film_2"
+        app:layout_constraintTop_toBottomOf="@+id/txt_movies"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="@id/guide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:src="@drawable/film_2"/>
+            <TextView
+                android:id="@+id/txt_film_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="4dp"
+                android:text="Haunted Mansion"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/rating_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:drawableLeft="@drawable/twotone_star_24"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--    film 3-->
+    <androidx.cardview.widget.CardView
+
+        app:layout_constraintTop_toBottomOf="@+id/film_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guide"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:id="@+id/film_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:src="@drawable/film_3"/>
+            <TextView
+                android:id="@+id/txt_film_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="4dp"
+                android:text="Little Mermaid"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/rating_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:drawableLeft="@drawable/twotone_star_24"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--    film 4-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/film_empat"
+        app:layout_constraintTop_toBottomOf="@+id/film_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="@id/guide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:src="@drawable/film_4"/>
+            <TextView
+                android:id="@+id/txt_film_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="4dp"
+                android:text="Indiana Jones"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/rating_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:drawableLeft="@drawable/twotone_star_24"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <!--    film 5-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/film_5"
+        app:layout_constraintTop_toBottomOf="@+id/film_empat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guide"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:src="@drawable/film_5"/>
+            <TextView
+                android:id="@+id/txt_film_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="4dp"
+                android:text="The Marvels"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/rating_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:drawableLeft="@drawable/twotone_star_24"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <!--    film 6-->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/film_6"
+        app:layout_constraintTop_toBottomOf="@+id/film_empat"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="10dp"
+        app:layout_constraintStart_toStartOf="@id/guide"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="6dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:src="@drawable/film_6"/>
+            <TextView
+                android:id="@+id/txt_film_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="4dp"
+                android:text="Quantumania"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/rating_6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.5"
+                android:drawableLeft="@drawable/twotone_star_24"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,12 @@
+<!-- res/drawable/rounded_spinner_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFFFF" />
+            <corners android:radius="16dp" /> <!-- Sesuaikan radius sesuai preferensi Anda -->
+            <stroke
+                android:width="3dp"
+                android:color="@color/purple" /> <!-- Ganti dengan warna border yang Anda inginkan -->
+        </shape>
+    </item>
+</layer-list>

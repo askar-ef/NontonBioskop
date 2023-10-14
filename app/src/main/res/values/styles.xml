@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomDatePickerStyle">
+        <item name="android:background">@drawable/custom_date_picker_background</item>
+        <item name="android:datePickerMode">calendar</item>
+        <item name="android:calendarViewShown">false</item>
+        <!-- Sesuaikan gaya sesuai dengan preferensi Anda -->
+    </style>
+
+</resources>

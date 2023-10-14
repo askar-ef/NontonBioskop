@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".SummaryActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ticket_film"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:cardCornerRadius="20dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+        <ImageView
+            android:id="@+id/film_2"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:src="@drawable/film_2"/>
+
+        <TextView
+            android:id="@+id/txt_username"
+            android:layout_toRightOf="@+id/film_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Daffa Askar Fathin"
+            android:textSize="28dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt_cinema"
+            android:layout_below="@+id/txt_username"
+            android:layout_toRightOf="@+id/film_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hartono Mall, Studio 1"
+            android:textSize="18dp"
+            android:textColor="@color/purple"
+            />
+
+            <TextView
+                android:id="@+id/txt_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_cinema"
+                android:layout_toRightOf="@+id/film_2"
+                android:text="Hartono Mall, Studio 1"
+                android:textColor="@color/gray"
+                android:textSize="16dp" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ticket_payment"
+        app:layout_constraintTop_toBottomOf="@+id/ticket_film"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order Number"
+                android:textColor="@color/purple"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/txt_orderNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="049274t2923230732"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment Method"
+                android:textColor="@color/purple"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/txt_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Internet Banking"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Platform"
+                android:textColor="@color/purple"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/txt_platform"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="BNI"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Seat"
+                android:textColor="@color/purple"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/txt_seat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VVIP"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:id="@+id/txt_seat_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="VVIP Seat"
+                android:textColor="@color/purple"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/txt_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp80.000"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Seat Order"
+                android:textColor="@color/purple"
+                android:textSize="20dp"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/txt_total_seat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2 Seat"
+                android:textStyle="bold"
+                android:textSize="24dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/ticket_totals"
+        app:layout_constraintTop_toBottomOf="@+id/ticket_payment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total Seat Order"
+                android:textColor="@color/purple"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txt_actual_pay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rp160.000"
+                android:textStyle="bold"
+                android:textSize="30dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:backgroundTint="@color/purple"
+        android:text="PAY">
+    </Button>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
