@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             editor.apply()
 
 
-            if (username == "Askar" && password == "as") {
+            if (username == "Askar" && password == "504665") {
                 val intent = Intent(this, MenuActivity::class.java)
                 intent.putExtra("username", username)
                 startActivity(intent)

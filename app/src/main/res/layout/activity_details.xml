@@ -6,6 +6,39 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DetailsActivity">
+  <LinearLayout
+      app:layout_constraintTop_toTopOf="parent"
+      android:id="@+id/toolbar"
+      android:orientation="horizontal"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:padding="20dp">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="50dp"
+      android:src="@drawable/logo_bioskop"/>
+
+  <TextView
+      android:paddingTop="10dp"
+      android:paddingLeft="10dp"
+      android:id="@+id/txt_name"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Movie Detail"
+      android:textColor="@color/purple"
+      android:textSize="26dp"
+      android:textStyle="bold"
+      />
+  </LinearLayout>
+
+  <ScrollView
+      app:layout_constraintTop_toBottomOf="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="0dp">
+      <androidx.constraintlayout.widget.ConstraintLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
 
   <ImageView
       android:id="@+id/image_film"
@@ -56,16 +89,18 @@
       android:layout_marginHorizontal="32dp"
       android:text="Storyline"/>
 
-  <TextView
-      android:id="@+id/desc"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:paddingHorizontal="32dp"
-      android:text="Disney and Pixar’s “Elemental” is an all-new, original feature film set in Element City, where fire-, water-, land- and air residents live together. The story introduces Ember, a tough, quick-witted and fiery young woman, whose friendship with a fun, sappy, go-with-the-flow guy named Wade challenges her beliefs about the world they live in."
-      android:textSize="18sp"
-      app:layout_constraintTop_toBottomOf="@+id/storyline"
-      tools:layout_editor_absoluteX="0dp" />
-
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="32dp"
+            android:text="Disney and Pixar’s “Elemental” is an all-new, original feature film set in Element City, where fire-, water-, land- and air residents live together. The story introduces Ember, a tough, quick-witted and fiery young woman, whose friendship with a fun, sappy, go-with-the-flow guy named Wade challenges her beliefs about the world they live in. Fafifuwasweswos fafifuwasweswos Fafifuwasweswos fafifuwasweswos Fafifuwasweswos fafifuwasweswos"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@+id/storyline"
+            tools:layout_editor_absoluteX="50dp"
+            android:paddingBottom="170dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  </ScrollView>
   <Button
       android:id="@+id/btn_ticket"
       android:layout_width="match_parent"
